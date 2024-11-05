@@ -1,18 +1,19 @@
-## Getting Started
+# Exercício 5.2
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+5.2 - Reimplementar as classes do exercício 4.1 desta vez usando Composição e responda a pergunta final: Qual design de projeto é melhor? Herança ou composição? Justifique a sua resposta.
 
-## Folder Structure
+## Herança x Composição
 
-The workspace contains two folders by default, where:
+Qual design de projeto é melhor? Herança ou composição?
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+#### Herança
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Herança é uma relação de hierarquia onde a subclasse herda as propriedade da superclasse. Esse tipo de estrutura é fundamental para reutilidzação do código, evitando a reescrita de atributos ou métodos que serão usados de forma frequente.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+#### Composição 
 
-## Dependency Management
+A composição é um relacionamento "tem-um", onde uma classe contém instâncias de outras classes como atributos, permitindo a combinação de funcionalidades.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+
+Em muitos casos, a composição é considerada uma abordagem mais flexível e modular do que a herança porque permite criar sistemas mais resilientes e menos acoplados. Composição facilita a reutilização e torna o código mais fácil de manter e escalar. Mas herança é útil em casos que exitem uma clara reutilização de código.
+
